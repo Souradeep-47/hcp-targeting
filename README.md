@@ -30,7 +30,7 @@ Before you begin, ensure you have the following installed on your system:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/hcp-targeting-app.git](https://github.com/your-username/hcp-targeting-app.git)
+    git clone https://github.com/Souradeep-47/hcp-targeting
     cd hcp-targeting-app
     ```
 
