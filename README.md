@@ -36,7 +36,7 @@ Before you begin, ensure you have the following installed on your system:
 
 2.  **Install dependencies:**
     ```bash
-    npm install
+    npm i
     ```
 
 3.  **Run the development server:**
@@ -48,7 +48,7 @@ Before you begin, ensure you have the following installed on your system:
 ## Usage Guide
 
 1.  **Upload Your Data**: Click the "Upload Weekly Claims CSV" button and select your IQVIA claims data file. The dashboard will automatically process the file and display the HCP cards.
-2.  **Filter Your View**: Use the dropdown menus in the "Filters & Settings" card to narrow down the HCPs by Therapy Area, Company, or Product.
+2.  **Filter Your View**: Use the dropdown menus in the "Filters & Settings" card to narrow down the AI generated insights by Therapy Area, Company, or Product.
 3.  **Analyze HCP Cards**: Each card provides a quick summary of an HCP's activity. Review the KPIs to understand their practice better.
 4.  **Get AI-Powered Insights**: Click the "Rep Plan & Details" button on any HCP card. This will open a full-screen pop-up with:
     -   A detailed **Snapshot** of the HCP's practice.
@@ -69,9 +69,9 @@ Before you begin, ensure you have the following installed on your system:
 Contributions are welcome! If you have ideas for new features or improvements, please feel free to open an issue or submit a pull request.
 
 1.  Fork the repository.
-2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
-3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4.  Push to the branch (`git push origin feature/AmazingFeature`).
+2.  Create your feature branch.
+3.  Commit your changes.
+4.  Push to the branch.
 5.  Open a Pull Request.
 
 ## License
