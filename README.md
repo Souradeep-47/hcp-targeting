@@ -49,7 +49,7 @@ Before you begin, ensure you have the following installed on your system:
 
 1.  **Upload Your Data**: Click the "Upload Weekly Claims CSV" button and select your IQVIA claims data file. The dashboard will automatically process the file and display the HCP cards.
 2.  **Filter Your View**: Use the dropdown menus in the "Filters & Settings" card to narrow down the AI generated insights by Therapy Area, Company, or Product.
-3.  **Gemini API Key**: Generate an API Key from [Gemini API Key](https://aistudio.google.com/u/0/apikey) and paste it in the 'Gemini AI for Talking Points' section.
+3.  **Gemini API Key**: Generate an API Key from [Gemini API Key](https://aistudio.google.com/u/0/apikey) and paste it in the "Gemini AI for Talking Points" section.
 4.  **Analyze HCP Cards**: Each card provides a quick summary of an HCP's activity. Review the KPIs to understand their practice better.
 5.  **Get AI-Powered Insights**: Click the "Rep Plan & Details" button on any HCP card. This will open a full-screen pop-up with:
     -   A detailed **Snapshot** of the HCP's practice.
