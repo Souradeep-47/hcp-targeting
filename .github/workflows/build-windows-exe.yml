@@ -2,6 +2,11 @@ name: Build Windows EXE
 
 on:
   workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Release tag to publish when run manually
+        required: true
+        default: v0.0.1
   push:
     branches:
       - main
@@ -39,7 +44,9 @@ jobs:
           if-no-files-found: error
 
       - name: Publish GitHub Release
-        if: startsWith(github.ref, 'refs/tags/v')
+        if: startsWith(github.ref, 'refs/tags/v') || github.event_name == 'workflow_dispatch'
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ github.event.inputs.release_tag || github.ref_name }}
+          name: HCP Targeting ${{ github.event.inputs.release_tag || github.ref_name }}
           files: release/*.exe
