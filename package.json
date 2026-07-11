@@ -2,17 +2,42 @@
   "name": "hcp-targeting",
   "private": true,
   "version": "0.0.1",
+  "description": "HCP Targeting Dashboard desktop app",
+  "main": "electron/main.cjs",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "electron": "electron .",
+    "dist:win": "npm run build && electron-builder --win nsis --publish never"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "electron": "^31.7.7",
+    "electron-builder": "^24.13.3",
     "vite": "^5.3.4"
+  },
+  "build": {
+    "appId": "com.souradeep47.hcptargeting",
+    "productName": "HCP Targeting",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "artifactName": "HCP-Targeting-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
   }
 }
