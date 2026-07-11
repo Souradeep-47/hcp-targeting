@@ -10,7 +10,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "electron": "electron .",
-    "dist:win": "npm run build && electron-builder --win nsis --publish never"
+    "dist:win": "npm run build && electron-builder --win nsis portable --publish never"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -32,12 +32,18 @@
       "electron/**/*"
     ],
     "win": {
-      "target": "nsis",
-      "artifactName": "HCP-Targeting-Setup-${version}.${ext}"
+      "target": [
+        "nsis",
+        "portable"
+      ]
     },
     "nsis": {
+      "artifactName": "HCP-Targeting-Setup-${version}.${ext}",
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
+    },
+    "portable": {
+      "artifactName": "HCP-Targeting-Portable-${version}.${ext}"
     }
   }
 }
